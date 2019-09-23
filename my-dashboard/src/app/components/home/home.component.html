@@ -1,0 +1,11 @@
+<h2>Hello {{username}}</h2>
+<i class="pi pi-check"></i>
+<h1 style="text-align: center">{{title}}</h1>
+<div class="p-grid">
+  <div *ngIf="showConfig" class="p-col" (click)="yourFunction()"><img src="assets/images/app-images/configurator.png" width="35%" height="85%">Workflow Congigurator</div>
+  <div *ngIf="showDecipher" class="p-col"><img src="assets/images/app-images/decipher.png" width="35%" height="85%">Workflow Decipher</div>
+  <div *ngIf="showClaimEntry" class="p-col" style="text-align: center"><img src="assets/images/app-images/claimwrite.png" width="35%" height="85%">Claim Entry</div>
+</div>
+
+
+<button type="button" pButton (click)="goToast()" icon="pi pi-check" iconPos="right" label="GO TOAST"></button>
